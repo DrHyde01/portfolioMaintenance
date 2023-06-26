@@ -1,0 +1,35 @@
+// COLORS
+$neutrals-1000: #000000;
+$neutrals-100: #DBCDE8;
+$dark-purple: #261A30;
+
+// MARGINS & PADDINGS
+$margin-none: 0rem;
+$margin-sm: 0.3rem;
+$margin-s: 0.5rem;
+$margin-base: 1rem;
+$margin-lg: 1.8rem;
+$margin-xl: 3rem;
+$margin-xxl: 6rem;
+
+$padding-none: 0px;
+$padding-sm: 0.3rem;
+$padding-s: 0.5rem;
+$padding-base: 1rem;
+$padding-lg: 1.8rem;
+$padding-xl: 3rem;
+$padding-xxl: 6rem;
+
+// HEIGHTS & WIDTHS
+$header-footer: 30vh;
+
+// MEDIAS QUERIES
+$breakpoints: (
+        mobile: 749px,
+  // max
+        tablet: 1024px,
+  // max
+        hd-screen: 1824px,
+  // min
+);
+

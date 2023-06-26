@@ -1,0 +1,14 @@
+header {
+  @include gradient(to top, $dark-purple, $neutrals-1000);
+  height: $header-footer;
+
+}
+
+section {
+  height: calc(100vh - ($header-footer)*2);
+}
+
+footer {
+  @include gradient(to bottom, $dark-purple, $neutrals-1000);
+  height: $header-footer;
+}

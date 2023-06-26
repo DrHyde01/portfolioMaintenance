@@ -1,0 +1,38 @@
+// Disable styles for links or lists
+@mixin styles-disable {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+// Gradients
+@mixin gradient ($direction, $start-color, $end-color) {
+  background: linear-gradient($direction, $start-color, $end-color);
+
+}
+
+// Mixins for responsive
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, hd-screen)) {
+    @content;
+  }
+}
+
+@mixin hd-screen-only {
+  @media screen and (min-width: map-get($breakpoints, hd-screen)) {
+    @content;
+  }
+}
+
